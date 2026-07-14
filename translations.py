@@ -120,9 +120,9 @@ TRANSLATIONS = {
 - **Sicherheit & DB:** Isolierte RDS PostgreSQL 15 Instanz in privaten Subnetzen mit automatisiertem Backup-Zyklus. SSH-Zugriff auf den Bastion Host ist streng auf die IP-Adresse des Deployers begrenzt.""",
             },
             {
-                "title": "🏛️ Fox Academy — Navigator App (v2.5.1)",
+                "title": "🏛️ Fox Academy — Navigator App",
                 "tech_stack": "Angular 14, Apollo Angular, GraphQL, RxJS 7, Azure MSAL, Azure Communication Services, CASL, Express.js",
-                "date": "2024 – 2025",
+                "date": "2020 – 2022",
                 "desc": """Fox Academy Navigator ist eine hochverfügbare Corporate-Learning-Plattform (SPA), die als XU Navigator (xu-navigator) auf Microsoft Azure betrieben wird. Die Anwendung umfasst über 80 Lazy-Loaded Feature-Module und verfügt über ein vollständiges i18n-Setup (DE, EN, IT).
 
 **Zentrale Funktionen & Architektur-Highlights:**
@@ -135,8 +135,7 @@ TRANSLATIONS = {
             {
                 "title": "🌐 SmartPlaces — Geo-basiertes Web3-Ökosystem",
                 "tech_stack": "Next.js, React Native, Expo, tRPC, Prisma, Node.js, TypeScript, AWS, Tailwind CSS, Radix UI, shadcn/ui, TanStack Query",
-                "date": "2024 – 2025",
-                "link": "https://github.com/yourprofile/smartplaces-monorepo",
+                "date": "2022 – 2025",
                 "desc": """SmartPlaces ist eine geo-basiert Web3-Plattform, auf der Nutzer virtuelle Grundstücke (NFTs) kaufen, verwalten und monetarisieren können, die mit realen Standorten verknüpft sind. Entwickelt als hochmodernes Monorepo mit Web, Mobile, Backend und skalierbaren Serverless-Komponenten.
 
 **Zentrale Funktionen & Fähigkeiten:**
@@ -150,7 +149,7 @@ TRANSLATIONS = {
             {
                 "title": "🌐🎨 SmartPlaces Marketing Platform (Webflow)",
                 "tech_stack": "Webflow, Custom JavaScript, HTML5, CSS3, Google Analytics, SEO",
-                "date": "2024 – 2025",
+                "date": "2023",
                 "link": "https://smart-places.io/",
                 "desc": """Entwicklung und technische Umsetzung der offiziellen, hochperformanten Marketing- und Launch-Plattform für das SmartPlaces-Projekt.
 
@@ -162,7 +161,7 @@ TRANSLATIONS = {
             {
                 "title": "🌐 DOMUS DATA — Corporate Web Presence (WordPress)",
                 "tech_stack": "WordPress (Custom Theme), PHP, JavaScript, Sass, MySQL, SEO, Security Hardening",
-                "date": "2018 – 2024",
+                "date": "2019",
                 "link": "https://www.domus-data.de/",
                 "desc": """Konzeptionierung und Implementierung des neuen, modernen Webauftritts für die DOMUS DATA GmbH – einem führenden Anbieter für spezialisierte Softwarelösungen im Immobilienbereich.
 
@@ -174,7 +173,7 @@ TRANSLATIONS = {
             {
                 "title": "⚡⚙️ Node.js Express REST API — Enterprise Seed Template",
                 "tech_stack": "Node.js, Express, TypeScript, Prisma ORM, MS SQL Server, JWT, Zod, bcryptjs, Nodemailer",
-                "date": "2025",
+                "date": "2026",
                 "link": "https://github.com/deroso2017/nodejs-express-api",
                 "desc": """Entwicklung eines robusten, produktionsfertigen REST-API-Templates nach Enterprise-Sicherheitsstandards zur schnellen Skalierung von Backend-Services.
 
@@ -342,9 +341,9 @@ TRANSLATIONS = {
 - **Secure Backend Gating:** Isolated RDS PostgreSQL databases inside private networks. Configured zero-trust Security Groups and locked down admin Bastion host access via real-time deployer IP lookups.""",
             },
             {
-                "title": "🏛️ Fox Academy — Navigator App (v2.5.1)",
+                "title": "🏛️ Fox Academy — Navigator App",
                 "tech_stack": "Angular 14, Apollo Angular, GraphQL, RxJS 7, Azure MSAL, Azure Communication Services, CASL, Express.js",
-                "date": "2024 – 2025",
+                "date": "2020 – 2022",
                 "desc": """Fox Academy Navigator is a high-availability corporate learning platform (SPA) branded as XU Navigator (xu-navigator) and deployed on Microsoft Azure. Organized across 80+ lazy-loaded feature modules with full internationalization (DE, EN, IT).
 
 **Key Features & Architectural Highlights:**
@@ -357,8 +356,7 @@ TRANSLATIONS = {
             {
                 "title": "🌐 SmartPlaces — Geo-Based Web3 Platform",
                 "tech_stack": "Next.js, React Native, Expo, tRPC, Prisma, Node.js, TypeScript, AWS, Tailwind CSS, Radix UI, shadcn/ui, TanStack Query",
-                "date": "2024 – 2025",
-                "link": "https://github.com/yourprofile/smartplaces-monorepo",
+                "date": "2022 – 2025",
                 "desc": """SmartPlaces is a geo-based Web3 platform where users can buy, manage, and monetize virtual land plots (NFTs) linked to real-world locations. It is built as a unified monorepo containing web, mobile, backend, and serverless architectures.
 
 **Key Capabilities & Highlights:**
@@ -372,7 +370,7 @@ TRANSLATIONS = {
             {
                 "title": "🌐🎨 SmartPlaces Marketing Platform (Webflow)",
                 "tech_stack": "Webflow, Custom JavaScript, HTML5, CSS3, Google Analytics, SEO",
-                "date": "2024 – 2025",
+                "date": "2023",
                 "link": "https://smart-places.io/",
                 "desc": """Developed and engineered the official marketing, informational, and launch landing platform for the SmartPlaces Web3 ecosystem.
 
@@ -384,7 +382,7 @@ TRANSLATIONS = {
             {
                 "title": "📊⚙️ DOMUS DATA — Corporate Web Presence",
                 "tech_stack": "WordPress (Custom Theme), PHP, JavaScript, Sass, MySQL, SEO, Security Hardening",
-                "date": "2018 – 2024",
+                "date": "2019",
                 "link": "https://www.domus-data.de/",
                 "desc": """Architected and deployed a fast, bespoke corporate portal for DOMUS DATA GmbH, a German software provider specializing in real estate and property management solutions.
 
@@ -396,7 +394,7 @@ TRANSLATIONS = {
             {
                 "title": "⚡⚙️ Node.js Express REST API — Enterprise Seed Template",
                 "tech_stack": "Node.js, Express, TypeScript, Prisma ORM, MS SQL Server, JWT, Zod, bcryptjs, Nodemailer",
-                "date": "2025",
+                "date": "2026",
                 "link": "https://github.com/deroso2017/nodejs-express-api",
                 "desc": """Engineered a robust, production-ready REST API skeleton prioritizing strict type-safety, clean MVC architecture, and enterprise database integrity.
 
