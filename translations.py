@@ -220,6 +220,19 @@ TRANSLATIONS = {
 - **Flexible Prüfungsmodi:** Bereitstellung modularer Prüfungs-Workflows, mit denen Anwender wahlweise den Gesamtkatalog, gezielt fehlerhaft beantwortete Fragen (Wrong Question Tracking) oder noch unbearbeitete Aufgaben trainieren können.
 - **Datenhaltung & Status:** Lokale Persistenz über SQLite via Flask-SQLAlchemy sowie Bereitstellung eines interaktiven Dashboards zur Visualisierung historischer Testergebnisse inklusive detaillierter Fehler-Reviews.""",
             },
+            {
+                "title": "🚀 Behdad Tabrizi — Career Hub (Portfolio App)",
+                "tech_stack": "Python, Streamlit, Pandas, NumPy, Boto3 (AWS SDK), PyMuPDF",
+                "date": "2026",
+                "link": "https://github.com/deroso2017/behdad-tabrizi-careerhub",
+                "desc": """Eine umfassende, mehrsprachige Fullstack-Portfolio-Applikation, die als dynamischer Hub für berufliche Leistungen dient.
+
+**Architektur & Features:**
+- **Dynamisches Content-Management:** Vollständige Trennung von Logik und Inhalt durch eine zentrale `translations`, die nahtlose Umschaltung zwischen Deutsch und Englisch ermöglicht.
+- **Sicheres Session-Management:** Passwortgeschützter Zugang mit Session-Handling und individuell konfigurierbaren App-Einstellungen via `.env`.
+- **Interaktives Erlebnis:** Integrierte PDF-Vorschau (via PyMuPDF), dynamische KPI-Dashboard-Karten und eine robuste Navigations-Struktur.
+- **Cloud-Readiness:** Vorbereitet für AWS-Deployments mit Boto3-Integration zur Cloud-Ressourcenverwaltung und performanten Datenverarbeitung mittels Pandas & NumPy.""",
+            },
         ],
     },
     "en": {
@@ -440,6 +453,19 @@ TRANSLATIONS = {
 - **Automated Document Extraction:** Designed an active file parsing pipeline using PyPDF2 and customized regular expressions (Regex) to map multiple-choice questions, answer trees, correct indicators, and context explanations.
 - **Dynamic Training Scopes:** Built functional endpoints allowing users to segment their active test run—targeting complete catalogs, fresh unanswered queries, or wrong answers only via an active Wrong Question Tracking schema.
 - **Persistence & Diagnostics:** Tied operational data back to light SQL architectures powered by Flask-SQLAlchemy alongside modular frontend dashboards built for visualizing success logs and score metrics.""",
+            },
+            {
+                "title": "🚀 Behdad Tabrizi — Career Hub (Portfolio App)",
+                "tech_stack": "Python, Streamlit, Pandas, NumPy, Boto3 (AWS SDK), PyMuPDF",
+                "date": "2026",
+                "link": "https://github.com/deroso2017/behdad-tabrizi-careerhub",
+                "desc": """A comprehensive, multi-lingual full-stack portfolio application acting as a dynamic hub for professional achievements and career management.
+
+**Architecture & Features:**
+- **Dynamic Content Management:** Full decoupling of logic and content via a centralized `translations` file, allowing seamless toggling between German and English.
+- **Secure Session Management:** Password-protected access with persistent session state and environment-based configurations.
+- **Interactive Experience:** Integrated PDF resume previewing (via PyMuPDF), dynamic KPI dashboard cards, and a robust multi-page navigation system.
+- **Cloud-Ready:** Designed for AWS environments with built-in Boto3 integration for cloud resource management and performant data processing via Pandas & NumPy.""",
             },
         ],
     },
