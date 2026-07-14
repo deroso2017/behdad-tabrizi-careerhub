@@ -1,8 +1,9 @@
-import base64
+import io
+import fitz
 import streamlit as st
 from auth import require_login
 from storage import download_file, file_exists
-from translations import TRANSLATIONS  # Import the central dictionary
+from translations import TRANSLATIONS
 
 require_login()
 
@@ -43,46 +44,27 @@ if file_exists(pdf_path):
     with st.spinner(_["cv_spinner"]):
         pdf_bytes = download_file(pdf_path)
 
-        # Encode bytes to base64
+        import base64
+
         base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
         pdf_data_url = f"data:application/pdf;base64,{base64_pdf}"
 
-        # Render a button to view the PDF in fullscreen
         st.markdown(
             f"""
             <a href="{pdf_data_url}" target="_blank" style="text-decoration: none; display: block; margin-bottom: 1.2rem;">
                 <div style="
-                    background-color: #1e1e1e;
-                    color: #ffffff;
-                    padding: 0.6rem 1rem;
-                    border: 1px solid #333333;
-                    border-radius: 8px;
-                    text-align: center;
-                    font-size: 0.95rem;
-                    font-weight: 500;
-                    cursor: pointer;
-                    width: 100%;
-                    box-sizing: border-box;
-                    transition: all 0.2s ease-in-out;
-                " 
-                onmouseover="this.style.backgroundColor='#2a2a2a'; this.style.borderColor='#555555';" 
-                onmouseout="this.style.backgroundColor='#1e1e1e'; this.style.borderColor='#333333';">
-                    {_["view_fullscreen"]}
-                </div>
+                    background-color: #1e1e1e; color: #ffffff;
+                    padding: 0.6rem 1rem; border: 1px solid #333333;
+                    border-radius: 8px; text-align: center;
+                    font-size: 0.95rem; font-weight: 500; cursor: pointer;
+                    width: 100%; box-sizing: border-box;
+                ">{_["view_fullscreen"]}</div>
             </a>
             """,
             unsafe_allow_html=True,
         )
 
-        # Embedded Preview
-        pdf_display = f"""
-            <iframe 
-                src="{pdf_data_url}#toolbar=0&navpanes=0&statusbar=0" 
-                width="100%" 
-                height="850px" 
-                type="application/pdf"
-                style="border: 1px solid #333333; border-radius: 8px; box-shadow: 0px 4px 16px rgba(0,0,0,0.4);"
-            >
-            </iframe>
-        """
-        st.markdown(pdf_display, unsafe_allow_html=True)
+        pdf = fitz.open(stream=io.BytesIO(pdf_bytes), filetype="pdf")
+        for i in range(pdf.page_count):
+            pix = pdf[i].get_pixmap(dpi=150)
+            st.image(pix.tobytes("png"), use_container_width=True)
