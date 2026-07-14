@@ -1,4 +1,6 @@
 import base64
+import io
+import fitz
 import streamlit as st
 from auth import require_login
 from storage import download_file, file_exists
@@ -136,39 +138,41 @@ st.title(t["nav_certifications"])
 st.markdown("---")
 
 
-# --- Optimized PDF loading to prevent IDM trigger ---
 @st.cache_data(show_spinner=False)
-def get_pdf_base64(full_path):
+def get_pdf_bytes(full_path):
     if file_exists(full_path):
-        pdf_bytes = download_file(full_path)
-        return base64.b64encode(pdf_bytes).decode("utf-8")
+        return download_file(full_path)
     return None
 
 
-# --- Popup Modal Dialog (Sleek Frame Preview, No IDM Auto-Download) ---
-@st.dialog("📄 Dokumentenvorschau / Document Preview", width="large")
+@st.dialog("📄 Dokumentenvorschau / Document Preview", width="medium")
 def show_pdf_preview(file_name, display_title, folder_path):
     full_path = f"{folder_path}/{file_name}"
-    base64_data = get_pdf_base64(full_path)
+    pdf_bytes = get_pdf_bytes(full_path)
 
-    if base64_data:
+    if pdf_bytes:
         st.subheader(display_title)
 
-        # Embedded PDF preview inside Dialog utilizing Data URL without direct file links
-        pdf_data_url = f"data:application/pdf;base64,{base64_data}"
+        base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
+        pdf_data_url = f"data:application/pdf;base64,{base64_pdf}"
         st.markdown(
             f"""
-            <iframe 
-                src="{pdf_data_url}#toolbar=0&navpanes=0&statusbar=0" 
-                width="100%" 
-                height="750px" 
-                type="application/pdf"
-                style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; box-shadow: 0px 4px 20px rgba(0,0,0,0.5);"
-            >
-            </iframe>
+            <a href="{pdf_data_url}" target="_blank" style="text-decoration: none; display: block; margin-bottom: 1rem;">
+                <div style="
+                    background-color: #1e1e1e; color: #ffffff;
+                    padding: 0.5rem 1rem; border: 1px solid #333333;
+                    border-radius: 8px; text-align: center;
+                    font-size: 0.9rem; font-weight: 500; cursor: pointer;
+                ">↗️ Vollbild / Fullscreen</div>
+            </a>
             """,
             unsafe_allow_html=True,
         )
+
+        pdf = fitz.open(stream=io.BytesIO(pdf_bytes), filetype="pdf")
+        for i in range(pdf.page_count):
+            pix = pdf[i].get_pixmap(dpi=150)
+            st.image(pix.tobytes("png"), use_container_width=True)
     else:
         st.error(f"Dokument '{file_name}' konnte nicht geladen werden.")
 
