@@ -133,9 +133,21 @@ TRANSLATIONS = {
 - **API- & Daten-Layer:** End-to-End typsichere GraphQL-Services via Apollo Angular (vollautomatisch generiert aus Schemas via graphql-code-generator) gepaart mit REST-Endpunkten für SAS-Token basierte Uploads.""",
             },
             {
+                "title": "🔥 Blaze — Fox Products Website",
+                "tech_stack": "Next.js 13 (App Router), React 18, TypeScript, Tailwind CSS, GSAP, Lottie, React Hook Form, Zod",
+                "date": "2023",
+                "desc": """Eine hochperformante, mehrsprachige Marketing-Plattform für Fox Products, entwickelt für maximale visuelle Interaktion und Conversion-Optimierung.
+
+**Architektur-Highlights:**
+- **Next.js 13 App Router:** Nutzung der neuesten Server-Component-Architektur für exzellente Ladezeiten und SEO.
+- **Rich Animation Stack:** Nahtlose Integration von GSAP für komplexe Scroll-Animationen und Lottie für leichtgewichtige, vektorbasierte Interaktions-Elemente.
+- **Formular-Management:** Typsichere Formularverarbeitung mittels `react-hook-form` und `zod` zur Validierung, inklusive Full-Booking-System für Kundenanfragen.
+- **Deployment & Infrastruktur:** Hochverfügbares Deployment über Nginx Reverse Proxy auf einem VPS, orchestriert durch PM2 zur Prozessüberwachung und performanten Auslieferung über Next.js Server-Instanzen.""",
+            },
+            {
                 "title": "🌐 SmartPlaces — Geo-basiertes Web3-Ökosystem",
                 "tech_stack": "Next.js, React Native, Expo, tRPC, Prisma, Node.js, TypeScript, AWS, Tailwind CSS, Radix UI, shadcn/ui, TanStack Query",
-                "date": "2022 – 2025",
+                "date": "2023 – 2025",
                 "desc": """SmartPlaces ist eine geo-basiert Web3-Plattform, auf der Nutzer virtuelle Grundstücke (NFTs) kaufen, verwalten und monetarisieren können, die mit realen Standorten verknüpft sind. Entwickelt als hochmodernes Monorepo mit Web, Mobile, Backend und skalierbaren Serverless-Komponenten.
 
 **Zentrale Funktionen & Fähigkeiten:**
@@ -367,9 +379,21 @@ TRANSLATIONS = {
 - **API & Data Layer:** End-to-End type-safe APIs using Apollo Angular to auto-generate typed services from GraphQL schemas via graphql-code-generator, paired with Express REST endpoints utilizing SAS tokens.""",
             },
             {
+                "title": "🔥 Blaze — Fox Products Website",
+                "tech_stack": "Next.js 13 (App Router), React 18, TypeScript, Tailwind CSS, GSAP, Lottie, React Hook Form, Zod",
+                "date": "2023",
+                "desc": """A high-performance, multilingual marketing platform for Fox Products, designed for maximum visual interaction and conversion optimization.
+
+**Architecture Highlights:**
+- **Next.js 13 App Router:** Utilizing the latest server component architecture for excellent load times and SEO.
+- **Rich Animation Stack:** Seamless integration of GSAP for complex scroll animations and Lottie for lightweight, vector-based interactive elements.
+- **Form Management:** Type-safe form processing using `react-hook-form` and `zod` for validation, including a full booking system for customer inquiries.
+- **Deployment & Infrastructure:** Highly available deployment via Nginx Reverse Proxy on a VPS, orchestrated by PM2 for process monitoring and high-performance serving through Next.js server instances.""",
+            },
+            {
                 "title": "🌐 SmartPlaces — Geo-Based Web3 Platform",
                 "tech_stack": "Next.js, React Native, Expo, tRPC, Prisma, Node.js, TypeScript, AWS, Tailwind CSS, Radix UI, shadcn/ui, TanStack Query",
-                "date": "2022 – 2025",
+                "date": "2023 – 2025",
                 "desc": """SmartPlaces is a geo-based Web3 platform where users can buy, manage, and monetize virtual land plots (NFTs) linked to real-world locations. It is built as a unified monorepo containing web, mobile, backend, and serverless architectures.
 
 **Key Capabilities & Highlights:**
