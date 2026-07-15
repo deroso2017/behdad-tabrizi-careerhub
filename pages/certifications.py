@@ -92,6 +92,12 @@ if lang == "de":
             "icon": "💻",
             "category": "Programmierung",
         },
+        {
+            "file": "BTA_Arbeitszeugniss.pdf",
+            "title": "Arbeitszeugnis",
+            "icon": "📄",
+            "category": "Berufserfahrung",
+        },
     ]
 else:
     cert_files = [
